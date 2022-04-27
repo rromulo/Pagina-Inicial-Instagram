@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body{
+    background-color: rgba(246, 243, 243, 0.055);
+    min-height: 100vh;
+}
+.container{
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    height: 100vh;
+    max-width: 935px;
+    text-align: center;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    align-content: center; 
+}
+a{
+    color: #0095f6;
+    transition: 0.4s;
+}
+a:hover{
+    color: #0051ff;
+}
+/*___________________________*/
+div.image_web{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+div.imgs{
+    position: relative;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+div.imgs img{
+    max-width: 100%;
+}
+div.imgs img.slider{
+    max-width: 54%;
+    max-height: 90%;
+    position: absolute;
+    left: 34%;
+    top: 4%;
+}
+/*__________________________________________*/
+section.instagram_continue{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+}
+div.instagram_wrapper{
+    width: 100%;
+    max-width: 320px;
+}
+div.login{
+    background-color: #fff;
+    min-height: 25rem;
+    max-width: 320px;
+    padding: 14px 6%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+div.login img{
+    width: 180px;
+    margin: 10px auto;
+}
+div.login input{
+    width: 100%;
+    background-color: rgba(204, 204, 204, 0.281);
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    margin-bottom: 15px;
+}
+div.login button{
+    width: 100%;
+    margin: 10px 0;
+    padding: 6px 0;
+    color: #fff;
+    background-color: #0094f6d8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.login>p{
+    margin: 10px 0;
+}
+i.fa-facebook-square{
+    font-size: 1.3em;
+    margin: 10px 0;
+    color: #0051ff;
+}
+div.cadastro{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 0.9em;
+    background-color: #fff;
+    max-width: 320px;
+    margin: 10px 0;
+    padding: 10px 2%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/*___________________________________________*/
+section.apps{
+    width: 100%;
+    max-width: 320px;
+    margin: 10px 0;
+}
+
+section.apps a img{
+    max-width: 8rem;
+    margin: 10px 8px;
+}
+/*________Responsivo_______*/
+
+@media screen and (max-width:768px) {
+    div.image_web{
+        display: none;/*Temporário - REMOVER ATRAVÉS DO JAVASCRIPT*/
+    }
+    section.instagram_continue{
+        width: 100%;
+        margin: 0 auto;
+    }
+    div.instagram_wrapper{
+        margin: 0 auto;
+        max-width: 280px;
+    }
+    section.apps{
+        width: 100%;
+        max-width: 280px;
+        margin: auto;
+    }
+}
+@media screen and (max-width:580px){
+    div.instagram_wrapper{
+        max-width: none;
+        margin: 0 auto;
+    }
+    div.login{
+        max-width: none;
+        min-height: 24rem;
+        max-width: none;border: 1px solid transparent;
+        padding: 0 6%;
+    }
+    div.cadastro{
+        max-width: none;border: 1px solid transparent;
+        margin: 20px auto;
+    }
+    section.apps{
+        width: 100%;
+        max-width:none;
+    }
+}
